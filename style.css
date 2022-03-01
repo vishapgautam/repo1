@@ -1,0 +1,153 @@
+/*global*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+  font-family: "Titillium-web", "sans-serif";
+}
+a {
+  color: rgb(50, 227, 240);
+  font-weight: bolder;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.8vw;
+  font-weight: bold;
+}
+
+/*home page styling*/
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.subforum {
+  margin-top: 20px;
+}
+
+.subforum-title {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 4px;
+}
+.subforum-description {
+  margin-block: 0;
+  word-break: normal;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: rgb(146, 243, 82);
+}
+.subforum-stats {
+  word-break: normal;
+}
+.subforum {
+  word-break: normal;
+}
+
+/*Useful to align the items on the center*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-divider {
+  display: block;
+  border: 0;
+  height: 1px;
+  color: black;
+}
+
+/*this code below is reshape the css in smaller sreens */
+/*smartphones*/
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
+  }
+  html {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* navbar*/
+
+header {
+  margin-inline: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  background-color: aqua;
+  padding: 10%;
+  height: 10px;
+  width: 65%;
+  display: inline-block;
+  border-radius: 5px;
+  max-height: 80px;
+  margin-right: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  overflow: hidden;
+}
+.nav-items a {
+  float: right;
+  display: block;
+  text-align: center;
+  margin: inline 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: yellow;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  float: left;
+  left: -10%;
+  background: #124581;
+  margin-top: 10%;
+}
+.nav2 {
+  height: 35px;
+  width: 100%;
+  background-color: #124581;
+}
